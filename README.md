@@ -5,7 +5,7 @@
     + Anaconda
     + System built-in python:
       If you know how to manage environment.
-    + Microsoft Store: TA hates this!
+    + Microsoft Store ~~(TA hates this!)~~
 
 2. Text Editor or IDE
     + Visual Studio Code
@@ -18,11 +18,9 @@
 
 ## Environment Setup
 
-
 ### Update to latest Anaconda 
-Open Anacaonda Prompt/Powershell
-
 ```bash
+# Open Anacaonda Prompt or your terminal
 conda -V
 
 # update the conda package manager to the latest version
@@ -42,7 +40,7 @@ conda -V
 
 ### Command Line
 
-Build from environment.yml
+From environment.yml
 ```bash
 $ conda env create -f environment.yml
 ```
@@ -70,6 +68,7 @@ $ conda activate bcc
 
 ### Running 
 ```bash
+$ conda activate bcc
 (bcc) $ python3 ./template/client.py
 ```
 
