@@ -5,7 +5,7 @@
     + Anaconda
     + System built-in python:
       If you know how to manage environment.
-    + ~~Microsoft Store~~: [Not Recommand], TA hate this !
+    + Microsoft Store: TA hates this!
 
 2. Text Editor or IDE
     + Visual Studio Code
@@ -18,21 +18,40 @@
 
 ## Environment Setup
 
+
+### Update to latest Anaconda 
+Open Anacaonda Prompt/Powershell
+
+```bash
+conda -V
+
+# update the conda package manager to the latest version
+conda update conda
+# use conda to update Anaconda to the latest version
+conda update anaconda
+
+conda -V
+```
+
+
 ### Anaconda GUI
-1. Import yml: [Image]
-2. Activate env: [Image]
+1. Environment, and Import
+   ![image](./image/import_1.png)
+2. Select `environment.yml` and naming for it
+   ![image](./image/import_2.png)
 
 ### Command Line
+
+Build from environment.yml
 ```bash
 $ conda env create -f environment.yml
+```
+Or build by your self
+```bash
+$ conda create -n bcc python=3.9
 $ conda activate bcc
-
-# Develop in environment
-(bcc) $ ...
-
-# Close Environment
-(bcc) $ conda deactivate 
-
+(bcc) $ pip install -U discord.py==2.2.2
+(bcc) $ pip install python-dotenv
 ```
 
 ## Discord Developer
@@ -51,7 +70,7 @@ $ conda activate bcc
 
 ### Running 
 ```bash
-(bcc) $ python3 first_bot.py
+(bcc) $ python3 ./template/client.py
 ```
 
 ## FAQ
@@ -69,6 +88,9 @@ $ conda activate bcc
     + Discord Developer BOT Setup
     + Invite Link
 
+4. PyNaCL:
+    + Voice channel
+    + discord.ext.commands.errors.CommandInvokeError: Command raised an exception: RuntimeError: PyNaCl library needed in order to use voice
 
 ## Notice
 [TODO]
