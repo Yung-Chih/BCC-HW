@@ -109,6 +109,8 @@ $ conda activate bcc
             ...
       ```
     + Error handler: 複雜
-    + Reference: https://stackoverflow.com/questions/48846859/how-to-check-if-a-user-has-provided-an-argument-discord-py
+    + Reference:
+        + https://stackoverflow.com/questions/48846859/how-to-check-if-a-user-has-provided-an-argument-discord-py
+        + https://discordpy.readthedocs.io/en/stable/ext/commands/commands.html#error-handling
 ## Notice
 [TODO]
