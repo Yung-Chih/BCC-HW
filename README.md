@@ -98,5 +98,17 @@ $ conda activate bcc
         + set `bot` as global variable
         + wrap `commands` in class, ex: `bot_cog.py`.
 
+6. `MissingRequiredArgument`: `xxx` is a required argument that is missing
+    + Default argument: 簡單
+      ```python
+      @commands.command()
+      async def say(ctx: Context, message = None):
+        if message is not None:
+            ...
+        else:
+            ...
+      ```
+    + Error handler: 複雜
+    + Reference: https://stackoverflow.com/questions/48846859/how-to-check-if-a-user-has-provided-an-argument-discord-py
 ## Notice
 [TODO]
