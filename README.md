@@ -86,10 +86,17 @@ $ conda activate bcc
 3. 權限
     + Discord Developer BOT Setup
     + Invite Link
+    + `discord.Intents.default()`: no message content
 
 4. PyNaCL:
     + Voice channel
     + discord.ext.commands.errors.CommandInvokeError: Command raised an exception: RuntimeError: PyNaCl library needed in order to use voice
+
+5. How to change prefix?
+    + Modify an attribute of Bot
+    + How to access `bot` in command
+        + set `bot` as global variable
+        + wrap `commands` in class, ex: `bot_cog.py`.
 
 ## Notice
 [TODO]
